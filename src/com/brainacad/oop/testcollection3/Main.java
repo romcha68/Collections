@@ -18,7 +18,9 @@ public class Main {
 
         System.out.println("First step:");
         System.out.println("\tArray List: \n\t\t" + arrayList);
+        printElements(linkedList.iterator());
         System.out.println("\tLinked List: \n\t\t" + linkedList);
+        printElements(linkedList.iterator());
 
         ListIterator arrayIterator = arrayList.listIterator();
         ListIterator linkedIterator = linkedList.listIterator();
@@ -32,7 +34,9 @@ public class Main {
 
         System.out.println("Second step:");
         System.out.println("\tArray List: \n\t\t" + arrayList);
+        printElements(linkedList.iterator());
         System.out.println("\tLinked List: \n\t\t" + linkedList);
+        printElements(linkedList.iterator());
 
         arrayIterator = arrayList.listIterator();
         while (linkedIterator.hasPrevious()) {
@@ -46,6 +50,15 @@ public class Main {
 
         System.out.println("Third step:");
         System.out.println("\tArray List: \n\t\t" + arrayList);
+        printElements(linkedList.iterator());
         System.out.println("\tLinked List: \n\t\t" + linkedList);
+        printElements(linkedList.iterator());
+
+    }
+    public static void printElements(Iterator iterator) {
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
+        System.out.println();
     }
 }
