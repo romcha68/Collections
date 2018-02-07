@@ -8,4 +8,5 @@ public class Main {
         MyNumGenerator myNumGenerator = new MyNumGenerator(5,64);
         System.out.println("MyNumGenerator:\n\t" + myNumGenerator.generateDistinct());
     }
+
 }
